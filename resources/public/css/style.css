@@ -1,2 +1,4 @@
 /* some style */
-
+div.stat-box {
+    text-align: center;
+}

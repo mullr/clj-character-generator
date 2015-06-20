@@ -2,6 +2,7 @@
 
 (enable-console-print!)
 
+
 ;; goals:
 ;; - automatically calculate stat bonuses, saving throws, skill bonuses
 ;; - track expendable resources
@@ -33,8 +34,15 @@
            :wis 13
            :cha 14}
 
-   :saving-throws {:str {:proficient true}
-                   :con {:proficient true}}
+   :inspiration 0
+   :proficiency-bonus 2
+
+   :saving-throws {:str {:proficient true, :value 4}
+                   :dex {:value -1}
+                   :con {:proficient true, :value 6}
+                   :int {:value 1}
+                   :wis {:value 3}
+                   :cha {:value 2}}
    :skills {:athletics {:proficient true}
             :history {:proficient true}
             :perception {:proficient true}
